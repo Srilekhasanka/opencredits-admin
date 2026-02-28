@@ -64,17 +64,17 @@
   margin-bottom: 32px;
 }
 
-.admin-login__icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  background: var(--admin-accent-soft);
-  color: var(--admin-accent);
-  display: inline-flex;
+.admin-login__brand {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.admin-login__logo {
+  height: 30px;
+  width: auto;
 }
 
 .admin-login__title {
@@ -142,6 +142,11 @@
   justify-content: center;
   margin-bottom: 36px;
   padding: 0 8px;
+}
+
+.admin-sidebar__logo {
+  height: 24px;
+  width: auto;
 }
 
 .admin-sidebar__brand-text {
@@ -956,11 +961,20 @@
     display: flex;
   }
 
+  .admin-shell__logo-mobile {
+    height: 20px;
+    width: auto;
+    margin-right: 4px;
+  }
+
   .admin-shell__brand-mobile {
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: var(--admin-accent);
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
 
   .admin-sidebar {

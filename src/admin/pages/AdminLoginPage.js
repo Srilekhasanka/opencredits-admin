@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAdminAuth } from '../context/AdminAuthContext';
-import { FiEye, FiEyeOff, FiLock } from 'react-icons/fi';
+import { FiEye, FiEyeOff } from 'react-icons/fi';
 
 const AdminLoginPage = () => {
   const navigate = useNavigate();
@@ -31,13 +31,13 @@ const AdminLoginPage = () => {
     <div className="admin-login">
       <div className="admin-login__card">
         <div className="admin-login__header">
-          <div className="admin-login__icon">
-            <FiLock />
+          <div className="admin-login__brand">
+            <img src="/images/company-logo.svg" alt="OpenCredits" className="admin-login__logo" />
+            <h1 className="admin-login__title">
+              Open <strong>Credits</strong>
+            </h1>
           </div>
-          <h1 className="admin-login__title">
-            Open <strong>Credits</strong>
-          </h1>
-          <p className="admin-login__subtitle">Admin Portal</p>
+          <p className="admin-login__subtitle">ADMIN PORTAL</p>
         </div>
 
         {error && <div className="admin-toast admin-toast--error">{error}</div>}

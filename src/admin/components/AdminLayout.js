@@ -54,6 +54,7 @@ const AdminLayout = ({ children }) => {
           {sidebarOpen ? <FiX /> : <FiMenu />}
         </button>
         <span className="admin-shell__brand-mobile">
+          <img src="/images/company-logo.svg" alt="OpenCredits" className="admin-shell__logo-mobile" />
           Open <strong>Credits</strong>{' '}
           <span className="admin-shell__badge">Admin</span>
         </span>
@@ -69,6 +70,7 @@ const AdminLayout = ({ children }) => {
       {/* Sidebar */}
       <aside className={`admin-sidebar ${sidebarOpen ? 'is-open' : ''}`}>
         <Link to="/admin/coupons" className="admin-sidebar__brand">
+          <img src="/images/company-logo.svg" alt="OpenCredits" className="admin-sidebar__logo" />
           <span className="admin-sidebar__brand-text">
             Open <strong>Credits</strong>
           </span>
