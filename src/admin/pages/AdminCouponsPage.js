@@ -135,7 +135,7 @@ const AdminCouponsPage = () => {
     {
       key: 'discount_type',
       label: 'Type',
-      render: (v) => (v === 'percentage' ? 'Percentage' : 'Fixed'),
+      render: (v) => (v === 'percentage' ? 'Percentage' : 'Fixed Amount'),
     },
     {
       key: 'discount_value',
@@ -294,7 +294,7 @@ const AdminCouponsPage = () => {
                 disabled={!!editing}
               >
                 <option value="percentage">Percentage</option>
-                <option value="fixed">Fixed Amount</option>
+                <option value="fixed_amount">Fixed Amount</option>
               </select>
             </div>
             <div className="admin-field">
